@@ -6,9 +6,10 @@
 const rockingEmotes = ["KaguyaRocking", "KanakoRocking", "MedicineRocking", "SagumeRocking", "ShionRocking", "ZUNRocking", "MarisaRocking", "ReimuRocking", "AyaRocking", "ChimataRocking", "CirnoRocking", "EikiRocking", "FlandreRocking", "HecatiaRocking", "HinaRocking", "IkuRocking", "JoonRocking", "JunkoRocking", "KanaRocking", "KasenRocking", "KeikiRocking", "KogasaRocking", "KoishiRocking", "KokoroRocking", "KosuzuRocking", "MegumuRocking", "MimaRocking", "MokouRocking", "MomijiRocking", "OkinaRocking", "PatchyRocking", "ReisenRocking", "RumiaRocking", "SakuyaRocking", "SanaeRocking", "SatoriRocking", "ShinmyRocking", "SuikaRocking", "SunnyRocking", "SuwakoRocking", "TenshiRocking", "TsukasaRocking", "WakasagihimeRocking", "WriggleRocking", "YamameRocking", "YoumuRocking", "YukariRocking", "YuumaRocking", "YuyukoRocking", "SeijaRocking"];
 const shuffled = rockingEmotes.sort(() => 0.5 - Math.random());
 const output = shuffled.slice(0, Math.floor(Math.random() * 20) + 1).join(" ");
-if (0.8 - Math.random() > 0)
-    document.body.innerHTML = output;
-const negativeEmotes = ["JunkoFinger", "NOTJAPANESEGOBLIN", "MarisaBeatingYou"];
-document.body.innerHTML = negativeEmotes[Math.floor(Math.random() * negativeEmotes.length)];
+document.body.innerHTML = output;
+if (0.2 - Math.random() > 0) {
+    const negativeEmotes = ["JunkoFinger", "NOTJAPANESEGOBLIN", "MarisaBeatingYou"];
+    document.body.innerHTML = negativeEmotes[Math.floor(Math.random() * negativeEmotes.length)];
+}
 </script>
 </html>
